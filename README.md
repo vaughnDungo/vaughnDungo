@@ -86,6 +86,30 @@
      
      This will open an interactive rebase window for the last 3 commits, allowing you to pick, edit, squash, or drop commits interactively.
 
+6. **Command: git log**
+   - *Description*: This command displays a log of commits in reverse chronological order, showing information such as commit hash, author, date, and commit message.
+   - *When to use*: When you want to view the commit history of a repository to understand the changes made over time.
+   - *Parameters*:
+     - -oneline: Display each commit on a single line for a more condensed view.
+     -p or -u: Show the patch introduced by each commit.
+   - *Example*:
+
+     git log --oneline
+
+   This command will display a concise log with each commit on a single line, including the commit hash and commit message.
+
+7. **Command: git revert**
+   - *Description*: This command creates a new commit that undoes the changes made by a previous commit, effectively reverting the repository's state.
+   - *When to use*: When you want to undo the changes introduced by a specific commit without removing it from the commit history.
+   - *Parameters*:
+     - The commit you want to revert.
+   - *Example*:
+
+     git revert abc123
+
+   This command will create a new commit that undoes the changes introduced by the commit with the hash abc123.
+
+   These additional Git commands provide essential functionalities for exploring the commit history and selectively applying or undoing changes in a Git repository.
 <!--
 *vaughnDungo/vaughnDungo* is a ✨ special ✨ repository because its README.md (this file) appears on your GitHub profile.
 
